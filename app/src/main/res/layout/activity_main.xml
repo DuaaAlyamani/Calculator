@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="30dp">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculator \n"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="50dp"/>
+
+    <EditText
+        android:id="@+id/etFirstNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="First number"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:textColorHint="#757575"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+    <EditText
+        android:id="@+id/etSecondNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Second number"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:textColorHint="#757575"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etFirstNumber" />
+
+    <Button
+        android:id="@+id/plus_button"
+        android:layout_width="107dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="96dp"
+        android:text="Plus"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etSecondNumber"
+        android:drawableBottom="@drawable/plus"
+      />
+
+    <Button
+        android:id="@+id/Minus_button"
+        android:layout_width="107dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="96dp"
+        android:text="Minus"
+        app:layout_constraintStart_toEndOf="@+id/plus_button"
+        app:layout_constraintTop_toBottomOf="@+id/etSecondNumber"
+        app:layout_constraintEnd_toStartOf="@+id/divided_button"
+        android:drawableBottom="@drawable/minus"
+        />
+    <Button
+        android:id="@+id/divided_button"
+        android:layout_width="107dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="96dp"
+        android:text="Divided"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Minus_button"
+        app:layout_constraintTop_toBottomOf="@+id/etSecondNumber"
+        android:drawableBottom="@drawable/divide"/>
+
+    <TextView
+        android:id="@+id/clculateResultView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+android:textAlignment="center"
+        android:textSize="20dp"
+        android:layout_marginTop="96dp"
+        tools:text="Calculate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Minus_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="PrimeGreen">#827717</color>
+    <color name="onPrimeGreen">#b4a647</color>
+    <color name="primeV">#524c00</color>
+    <color name="secandry">#afb42b</color>
+    <color name="secanV">#7c8500</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>
